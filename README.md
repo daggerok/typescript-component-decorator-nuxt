@@ -9,18 +9,23 @@ cd typescript-nuxt-min/
 npm init -y
 ```
 
-## IMPORTANT: install nux as dependency (not as devDependency!)
+## IMPORTANT! install dependencies as is!
+
+_dependencies_
+
 ```bash
 npm i -E nuxt vue-property-decorator material-design-icons-iconfont
 ```
 
-## install `@nuxt/typescript-build` as dev dependency:
+_devDependencies_
 
 ```bash
 npm i -ED @nuxt/typescript-build @nuxtjs/vuetify css-loader nuxt-webfontloader svg-loader
 ```
 
-## add npm-scripts in _package.json_ file:
+## add npm-scripts
+
+_package.json_
 
 ```json
 {
@@ -33,7 +38,9 @@ npm i -ED @nuxt/typescript-build @nuxtjs/vuetify css-loader nuxt-webfontloader s
 }
 ```
 
-## create _tsconfig.json_ file:
+## create typescript config
+
+_tsconfig.json_
 
 ```json
 {
@@ -69,7 +76,8 @@ npm i -ED @nuxt/typescript-build @nuxtjs/vuetify css-loader nuxt-webfontloader s
 }
 ```
 
-whre `@nuxt/types` should not be installed -- it's already packages together with `@nuxt/typescript-build`.
+* where `@nuxt/types` should not be installed -- it's already packages together with `@nuxt/typescript-build`.
+* see IMPORTANT lines comments! 
 
 ## create _nuxt.config.js_ file:
 
