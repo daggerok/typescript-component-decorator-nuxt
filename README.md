@@ -1,5 +1,5 @@
 # typescript-component-decorator-nuxt
-Nutx.js TypeScript @Conponent decorator setup
+Nutx.js TypeScript @Conponent decorator setup (+ Vuetify icons)
 
 ## generate new npm project from scratch:
 
@@ -11,13 +11,13 @@ npm init -y
 
 ## IMPORTANT: install nux as dependency (not as devDependency!)
 ```bash
-npm i -E nuxt
+npm i -E nuxt vue-property-decorator material-design-icons-iconfont
 ```
 
 ## install `@nuxt/typescript-build` as dev dependency:
 
 ```bash
-npm i -ED @nuxt/typescript-build
+npm i -ED @nuxt/typescript-build @nuxtjs/vuetify css-loader nuxt-webfontloader svg-loader
 ```
 
 ## add npm-scripts in _package.json_ file:
@@ -61,9 +61,10 @@ npm i -ED @nuxt/typescript-build
      ]
    },
    "types": [
-     "@nuxt/types"
+     "@nuxt/types",
+     "vuetify" /* <-- IMPORTANT */
    ],
-   "experimentalDecorators": true
+   "experimentalDecorators": true  /* <-- IMPORTANT */
  }
 }
 ```
