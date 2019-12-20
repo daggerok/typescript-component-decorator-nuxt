@@ -9,16 +9,11 @@
     </v-flex>
   </v-layout>
 </template>
+
 <!-- THIS lang="ts" IS REALLY IMPORTANT! -->
 <script lang="ts">
-  // import { VWindow } from 'vuetify';
   import { Component, Ref, Vue } from 'vue-property-decorator';
   import UserView from '~/components/UserView.vue';
-
-  interface User {
-    firstName: string;
-    lastName: number;
-  }
 
   @Component({
     components: { UserView }
