@@ -16,6 +16,11 @@
 
   export default Vue.extend({
     name: 'default',
+    data () {
+      return {
+        fixed: undefined // prop will be reactive, fix vuetify component props
+      };
+    }
   });
 </script>
 

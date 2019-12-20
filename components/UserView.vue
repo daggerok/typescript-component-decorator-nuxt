@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<script lang="ts">  // <--- THIS lang="ts" IS REALLY IMPORTANT!
+<!-- THIS lang="ts" IS REALLY IMPORTANT! -->
+<script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 interface User {
@@ -12,7 +13,9 @@ interface User {
   lastName: number;
 }
 
-@Component
+@Component({
+  name: 'UserView',
+})
 export default class UserView extends Vue {
   @Prop({ type: Object, required: true })
   readonly user!: User;

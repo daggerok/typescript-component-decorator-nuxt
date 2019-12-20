@@ -79,6 +79,15 @@ _tsconfig.json_
 * where `@nuxt/types` should not be installed -- it's already packages together with `@nuxt/typescript-build`.
 * see IMPORTANT lines comments! 
 
+_vue-shim.d.ts_
+
+```typescript
+declare module '*.vue' {
+  import Vue from 'vue';
+  export default Vue;
+}
+```
+
 ## create _nuxt.config.js_ file:
 
 ```js
@@ -185,6 +194,7 @@ export default class UserView extends Vue {
 
 ## resources
 
+* https://github.com/vuejs/vue-class-component#undefined-will-not-be-reactive
 * https://github.com/vuetifyjs/vue-cli-plugin-vuetify/issues/112#issuecomment-562935079
 * https://github.com/kaorun343/vue-property-decorator#-refrefkey-string-decorator
 * https://typescript.nuxtjs.org/cookbook/components/#components
