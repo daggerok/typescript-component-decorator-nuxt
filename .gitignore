@@ -1,0 +1,15 @@
+.idea
+!.idea/
+.idea/*
+!.idea/runConfigurations/
+*.iml
+*.ipr
+*.iws
+*.log*
+node_modules/
+.nuxt/
+dist/
+/out/
+**/out/**
+.DS_Store
+package-lock.json

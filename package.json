@@ -1,0 +1,33 @@
+{
+  "name": "typescript-component-decorator-nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt.js TypeScript @Component decorator project from scratch + Vuetify",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "vuetify",
+    "typescript",
+    "vue-property-decorator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nuxt/typescript-build": "0.5.2",
+    "@nuxtjs/vuetify": "1.9.1",
+    "css-loader": "3.4.0",
+    "nuxt-webfontloader": "1.1.0",
+    "svg-loader": "0.0.2"
+  },
+  "dependencies": {
+    "material-design-icons-iconfont": "5.0.1",
+    "nuxt": "2.11.0",
+    "vue-property-decorator": "8.3.0"
+  }
+}
